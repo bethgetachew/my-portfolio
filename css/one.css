@@ -34,13 +34,23 @@ section.fixed {
   position: absolute;
   transform: translateY(-50%);
   top: -200px;
-  font-size: 10vmin;
+  font-size: 11vmin;
   letter-spacing: 10px;
   transition: font-size 1s, opacity 0.4s, top 2s;
   color: white;
 }
 
 /* This is the big slide in title that appears on the left */
+.about-title {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  font-size: 11vmin;
+  letter-spacing: 10px;
+  transition: font-size 1s, opacity 0.4s, top 2s;
+  color: white;
+}
+
 /* Heading styles */
 h2, h3 {
   text-transform: uppercase;
@@ -114,41 +124,7 @@ section.project {
   transition: bottom 2.5s;
 }
 
-video {
-  width: 80%;
-}
-
-@media screen and (max-width: 1070px) {
-  h1 {
-    font-size: 7vmin;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  h1 {
-    font-size: 5vmin;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  section.fixed {
-    position: static;
-    height: 500px;
-  }
-
-  main {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: auto;
-    margin-left: 0;
-  }
-
-  video {
-    max-width: 100%;
-  }
-
-  .hidden-text {
-    position: static;
-    padding: 60px;
-  }
+.about h1 {
+  font-size: 11vmin;
+  font-color: white;
 }
