@@ -151,4 +151,8 @@ video {
     position: static;
     padding: 60px;
   }
+
+  section.project {
+    margin: 100px 0px;
+  }
 }
