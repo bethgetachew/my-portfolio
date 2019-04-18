@@ -15,14 +15,24 @@ document.addEventListener("scroll", function() {
 
   let distanceFromTop = window.scrollY;
 
-  if (distanceFromTop > 3000) {
+
+
+  if (distanceFromTop > 0) {
     h1Tag.style.opacity = "0";
     navTag.style.opacity = "0";
-    hiddenTextTag.style.bottom = "35%";
+
+
   } else {
     h1Tag.style.opacity = "1";
     navTag.style.opacity = "1";
-    hiddenTextTag.style.bottom = "-1000px";
+
+  }
+
+
+  if (distanceFromTop > 4000) {
+    hiddenTextTag.style.opacity = "1";
+  } else {
+    hiddenTextTag.style.opacity = "0";
   }
 
 });

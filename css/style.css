@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 
 body {
-  background-color: #FD0900;
+  background-color: rgb(253, 21, 35);
   color: black;
   transition: background-color 1s;
   font-family: 'Russo One', sans-serif;
-  transition: background-color 2s;
+  transition: background-color 1.5s;
 }
 
 /* Javascript background colour classes */
 .background1 {
-  background-color: #FD8002;
+  background-color: rgb(255, 0, 126);
 }
 
 .background2 {
-  background-color: #FEAC00;
+  background-color: rgb(229, 85, 255);
 }
 
 /* Fixed bar on the left-hand side of the page */
@@ -58,6 +58,7 @@ h3 {
   text-decoration: none;
   align: left;
   color: black;
+  padding: 20px;
 }
 
 /* Navigation styles */
@@ -105,13 +106,19 @@ section.about-content {
 section.project {
   text-align: center;
   margin: 300px 0px;
+  padding: 0px 15px;
 }
 
 /* Large text that slides in from the bottom */
 .hidden-text {
   position: absolute;
-  bottom: -600px;
-  transition: bottom 2.5s;
+  opacity: 0;
+  bottom: 15%;
+  transition: bottom 1s, opacity 1s;
+}
+
+.mobile-text {
+  display: none;
 }
 
 video {
@@ -122,11 +129,19 @@ video {
   h1 {
     font-size: 7vmin;
   }
+
+  h3 {
+    font-size: 7vmin;
+  }
 }
 
 @media screen and (max-width: 870px) {
   h1 {
     font-size: 5vmin;
+  }
+
+  .mobile-text {
+    display: block;
   }
 }
 
@@ -154,5 +169,16 @@ video {
 
   section.project {
     margin: 100px 0px;
+  }
+
+  section.about-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  section.fixed {
+    width: 100%;
   }
 }
