@@ -79,6 +79,7 @@ nav a {
 
 nav a:hover {
   color: white;
+  z-index: 10;
 }
 
 /* Scrollable main content area styles */
