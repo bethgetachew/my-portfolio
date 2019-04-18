@@ -65,6 +65,7 @@ h3 {
 nav {
   position: absolute;
   top: 60%;
+  z-index: 10;
 }
 
 a {
@@ -79,7 +80,6 @@ nav a {
 
 nav a:hover {
   color: white;
-  z-index: 10;
 }
 
 /* Scrollable main content area styles */
